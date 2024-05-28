@@ -14,14 +14,17 @@ int main() {
     FILE* file = fopen(file_name, "r");
     if (file == NULL) {
         printf("Error£¡\n");
+        
         return 1;
     }
     else if (strcmp(param, "-c") == 0) {
         int char_count = count_characters(file);
+        
         printf("×Ö·ûÊý£º%d\n", char_count);
     }
     else if (strcmp(param, "-w") == 0) {
         int word_count = count_words(file);
+        
         printf("µ¥´ÊÊý£º%d\n", word_count);
     }
 
